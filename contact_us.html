@@ -81,6 +81,45 @@ nav {
   section div {
     margin-bottom: 30px;
   }
+  section form label {
+    color: white;
+    border: none;
+    width: 80%;
+  }
+  section form input {
+    color: white;
+    border: none;
+    width: 300px;
+  }
+  section form textarea {
+    color: white;
+    border: none;
+    width: 300px;
+    height: 50px;
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+  }
+
+  section form {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 550px;
+    height: 650px;
+  }
+
+  section form label,
+  section form input,
+  section form textarea,
+  section form button {
+    display: block;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
     </style>
 </head>
 <body>
@@ -98,16 +137,17 @@ nav {
           </li>
         </ul>
     </nav>
-    <section style="margin: 60px 80px; color: white;">
-        <div>
-            <h1 style="font-size: 40px; width: 20px;">Explore Dream Destintion</h1>
-        </div>
-        <div> 
-            <p style="font-size: 14px; width: 250px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Omnis officiis autem iste numquam temporibus accusantium maiores reiciendis quasi,
-                 expedita repellat veniam officia libero ad! Sunt iure rerum expedita ducimus repellat.</p>
-        </div>
-        <button style="background-color: rgb(8, 156, 156); color: white; padding: 15px; border-radius: 4px; border: none; cursor: pointer; margin-left: 80px;" type="submit">Submit</button>
+    <section>
+        <h1 style="font-size: 40px; width: 20px; margin-left: 60px;">Explore Dream Destintion</h1>
+        <form action="" style="background: rgba(67, 54, 54, 0.331); color: white; display: block; height: 400px;">
+            <label for="name">name</label>
+            <input type="text" style="background-color:transparent; border: 3px solid black;">
+            <label for="email">email</label>
+            <input type="email" style="background-color:transparent; border: 3px solid black;">
+            <label for="msg">msg</label>
+            <textarea style="background-color:transparent; border: 3px solid black;"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
  
 </body>
